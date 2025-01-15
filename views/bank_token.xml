@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_company_form_inherit_bank_token" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.bank.token</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Informacion del Banco">
+                    <group>
+                        <group string="Informacion del banco">
+                            <field name="bank_token_bancamiga" placeholder="Enter the bank token here"/>
+                        </group>
+                        <group string="Informacion de la empresa">
+                            <field name="company_name" />
+                            <field name="rif"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
